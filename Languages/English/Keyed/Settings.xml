@@ -181,6 +181,10 @@
 	<SettingDebugNeeds>DEBUG Needs</SettingDebugNeeds>
   <SettingDebugNeedsHelp>Needs like bladder, play/learn/joy or diaper have overlap with capacities. But this debugging specifically targets the adding, removing and ticking of a need and not any resulting capacity.</SettingDebugNeedsHelp>
 	
+  <!-- Apparel Stats -->
+  <SettingStreamlinedApparel>Disable most apparel special offsets</SettingStreamlinedApparel>
+  <SettingStreamlinedApparelHelp>With this setting on, apparels from this mod, like diapers, onesies and underwear, will have less bloated stats, mostly affecting physical stats like movespeed instead of mood management and psychic sensitivity, for a more balanced but less roleplayful gameplay.</SettingStreamlinedApparelHelp>
+
   <!-- Buttons -->
   <SettingCheckForeverYoung>Check 'ForeverYoung' active</SettingCheckForeverYoung>
   <SettingForeverYoungActive>'ForeverYoung' IS active!</SettingForeverYoungActive>
