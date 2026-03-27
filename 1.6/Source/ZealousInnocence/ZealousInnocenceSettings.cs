@@ -21,6 +21,8 @@ namespace ZealousInnocence
         //public bool formerAdultsCanHaveIdeoRoles = true;
         public bool bladderForRaidCaravanVisitors = true;
 
+        public bool streamlinedApparelStats = false;
+
         public bool dynamicGenetics = true;
         public float adultBedwetters = 0.05f;
 
@@ -128,7 +130,8 @@ namespace ZealousInnocence
             Scribe_Values.Look(ref formerAdultsNeedLearning, "formerAdultsNeedLearning", true);
             Scribe_Values.Look(ref formerAdultsCanHaveIdeoRoles, "formerAdultsCanHaveIdeoRoles", true);*/
             Scribe_Values.Look(ref bladderForRaidCaravanVisitors, "bladderForRaidCaravanVisitors", true);
-            
+
+            Scribe_Values.Look(ref streamlinedApparelStats, "streamlinedApparelStats", false);
 
             Scribe_Values.Look(ref dynamicGenetics, "dynamicGenetics", true);
             Scribe_Values.Look(ref adultBedwetters, "adultBedwetters", 0.05f);
@@ -288,6 +291,12 @@ namespace ZealousInnocence
             list.GapLine(gabSize);
             list.TextEntry("SettingRequiresRestart".Translate());
             list.CheckboxLabeled("SettingEnableBladderForRaidVisitorCaravans".Translate(), ref bladderForRaidCaravanVisitors, "SettingEnableBladderForRaidVisitorCaravansHelp".Translate());
+
+            list.GapLine(gabSize);
+            bool prevStreamlined = streamlinedApparelStats;
+            list.CheckboxLabeled("SettingStreamlinedApparel".Translate(), ref streamlinedApparelStats, "SettingStreamlinedApparelHelp".Translate());
+            if (prevStreamlined != streamlinedApparelStats)
+                ApparelStatManager.Apply();
 
             this.list.NewColumn();
             this.list.ColumnWidth = (canvas.width - 40f) * 0.33f;
