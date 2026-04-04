@@ -543,7 +543,7 @@
       <shaderType>MoteIncineratorBeam</shaderType>
       <shaderParameters>
         <_GradientTex>/Things/Motes/WaterBeamGradient2</_GradientTex>
-        <_AgeScalarNoise>/Things/Mote/IncineratorBeamAgeNoise</_AgeScalarNoise>
+        <_AgeScalarNoise>/Things/Motes/IncineratorBeamAgeNoise</_AgeScalarNoise>
         <_ScrollSpeedA>-4 </_ScrollSpeedA>
         <_ScrollSpeedB>3</_ScrollSpeedB>
         <_Intensity>0</_Intensity>
@@ -607,7 +607,7 @@
 		<fadeOutTime>0.04</fadeOutTime>
 		<graphicData>
 			<graphicClass>Graphic_Fleck</graphicClass>
-			<texPath>Things/Mote/IncineratorBeamGlow</texPath>
+			<texPath>Things/Motes/IncineratorBeamGlow</texPath>
 			<shaderType>MoteGlow</shaderType>
 			<drawSize>12</drawSize>
 			<!-- was (1, .7, 0.09, 0.75) -->

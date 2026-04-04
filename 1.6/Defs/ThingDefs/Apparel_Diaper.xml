@@ -8,7 +8,7 @@
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
-				<li>Legs</li>
+				<li>Waist</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/Diaper/PlainCloth/PlainCloth</wornGraphicPath>
 			<layers>
@@ -295,7 +295,7 @@
 		</thingCategories>
 		<apparel>
 			<bodyPartGroups>
-				<li>Legs</li>
+				<li>Waist</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/Diaper/Disposable/Disposable</wornGraphicPath>
 			<layers>

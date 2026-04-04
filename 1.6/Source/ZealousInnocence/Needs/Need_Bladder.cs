@@ -185,7 +185,7 @@ namespace ZealousInnocence
 
             if (nd.defName == "Bladder" || nd.defName == "Diaper")
             {
-                __result = pawn.canHaveBladder();
+                __result = pawn.canHaveBladder() && nd.defName != "Diaper" || pawn.canWearDiaper();
             }
             else
             {

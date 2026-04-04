@@ -73,7 +73,7 @@
           </li>
         </studyNotes>
       </li>
-      <li Class="ZealousInnocence.CompProperties_StudiableRegression">
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="ZealousInnocence.CompProperties_StudiableRegression">
         <frequencyTicks>120000</frequencyTicks> <!-- 2 days -->
         <studyEnabledByDefault>false</studyEnabledByDefault>
         <showToggleGizmo>true</showToggleGizmo>

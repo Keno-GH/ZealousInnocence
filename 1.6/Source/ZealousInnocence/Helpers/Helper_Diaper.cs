@@ -422,7 +422,10 @@ namespace ZealousInnocence
         }
         public static bool canHaveBladder(this Pawn pawn)
         {
-            return pawn.RaceProps.IsFlesh || pawn.RaceProps.EatsFood;
+            if (pawn.RaceProps?.IsFlesh != true) return false;
+            if (pawn.RaceProps?.EatsFood != true) return false;
+            if (pawn.RaceProps?.Humanlike != true && pawn.Faction != Faction.OfPlayer) return false;
+            return true;
         }
         public static bool canWearDiaper(this Pawn pawn)
         {
